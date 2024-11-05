@@ -214,7 +214,7 @@ async function analyzeConversation(conversation, prompt) {
     console.log('Iniciando análisis de conversación con OpenAI...');
     try {
         const response = await openai.chat.completions.create({
-            model: "gpt-4",
+            model: "gpt-4o-mini",
             messages: [
                 {
                     role: "system",
